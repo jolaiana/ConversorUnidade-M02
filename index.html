@@ -16,7 +16,7 @@
         <form>
                 <fieldset class="categorias">
                     <label> Categoria </label>
-                    <select>
+                    <select id="categorias">
                         <option>Comprimento</option>
                         <option>Peso</option>
                         <option>Temperatura</option>
@@ -25,7 +25,7 @@
 
                 <fieldset class="valorEntrada">
                     <label for="number"></label>
-                    <input type="number" placeholder="Digite o valor">
+                    <input type="number" placeholder="Digite o valor" id="valorEntrada">
                 </fieldset>
 
                 <fieldset class="medidas">
@@ -43,10 +43,11 @@
                 </fieldset>
 
                 <fieldset class="resultado">
-                    <button> Converter </button> <br>
-                    <input type="text">
+                    <button type="button"  id="botao"> Converter </button> <br>
+                    <input type="text" id="valorSaida">
                 </fieldset>
         </form>
     </main>
-                    </body>
+    <script src="./JS/script.js"></script>
+</body>
 </html>
