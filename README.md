@@ -1,7 +1,7 @@
 <h1> Conversor de Unidades </h1> 
 
 Olá! Este é o projeto individual dedicado ao Módulo 2 do curso Códigos do Amanhã. Com um programa de uma unica página, estruturada em HTML e estilizada em CSS, 
-está proposto com conversor de unidades dividido em três categorias: <br>
+está proposto um conversor de unidades dividido em três categorias: <br>
 📐 Comprimento: metros, centímetros, polegadas; <br>
 ⚖️ Peso: quilogramas, gramas, libras; <br>
 🌡️ Temperatura: Celsius, Fahrenheit, Kelvin. 
