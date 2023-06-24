@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <!-- criado documento padrão html e referenciado o documento CSS -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Conversor de Unidades </title>
@@ -9,45 +10,76 @@
 
 <body>
 <main>
+    <!-- criada div com o titulo do projeto, para ficar ao lado esquerdo da página -->
     <div class="titulo">
         <h1>Conversor de <br> Unidades 📐 </h1>
     </div>
-
+<!-- criado o formulário de conversão -->
         <form>
+            <!-- o formulário é dividido por fieldsets, que recebem uma classe de acordo com sua função -->
                 <fieldset class="categorias">
                     <label> Categoria </label>
                     <select id="categorias">
+                <!-- criada uma id para referenciação em JS -->
                         <option>Comprimento</option>
                         <option>Peso</option>
                         <option>Temperatura</option>
                     </select>
+<!-- primeira seção do formulário onde se encontra a seleção com as categorias propostas -->
                 </fieldset>
 
                 <fieldset class="valorEntrada">
                     <label for="number"></label>
                     <input type="number" placeholder="Digite o valor" id="valorEntrada">
+<!-- Segunda seção com o input para o usuário inserir o valor que desejará converter -->
                 </fieldset>
 
                 <fieldset class="medidas">
-                    <select>
+                    <select id="entradaComprimento" class="visivel">
+                        <option> Metro </option>
+                        <option> Centímetro </option>
+                        <option> Polegada </option>
+                    </select>
+                    <select id="entradaPeso" class="invisivel">
+                        <option> Quilogramas </option>
+                        <option> Gramas </option>
+                        <option> Libras </option>
+                    </select>
+                    <select id="entradaTemperatura" class="invisivel">
                         <option> Celsius </option>
                         <option> Kelvin </option>
                         <option> Fahrenheit </option>
                     </select>
                     <img src="./Imagens/seta.svg" alt="seta para direita">
-                    <select>
+                    <select id="saidaTemperatura" class="invisivel">
                         <option> Celsius </option>
                         <option> Kelvin </option>
                         <option> Fahrenheit </option>
                     </select>
+                    <select id="saidaPeso" class="invisivel">
+                        <option> Quilogramas </option>
+                        <option> Gramas </option>
+                        <option> Libras </option>
+                    </select>
+                    <select id="saidaComprimento" class="visivel">
+                        <option> Metro </option>
+                        <option> Centímetro </option>
+                        <option> Polegada </option>
+                    </select>
+<!-- Terceira sessão onde se encontra as opções de medidas; Sendo a seleção da esquerda que o usuário irá sair e da direita para qual deseja converter -->
                 </fieldset>
 
                 <fieldset class="resultado">
                     <button type="button"  id="botao"> Converter </button> <br>
-                    <input type="text" id="valorSaida">
+                    <div class="caixa-resultado" id="valorSaida">
+                        
+                    </div>
+
+<!-- quarta seção com o botão referenciado em JS dando comando para conversão de unidades; e criada a input onde será exibida a resposta -->
                 </fieldset>
         </form>
     </main>
     <script src="./JS/script.js"></script>
+    <!-- referenciação do arquivo js -->
 </body>
 </html>

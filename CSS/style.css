@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amita:wght@700&family=Merienda&display=swap');
-
+/* importação das fontes selecionas para estilização */
+/* reset css */
 *{
     margin: 0;
     padding: 0;
@@ -8,6 +9,7 @@
     text-decoration: none;
 }
 
+/* definida imagem de fundo com proporção 100% visando uma página sem rolamento */
 body{
     background-image: url(../Imagens/fundoAGRVAI.svg);
     background-size: contain;
@@ -15,6 +17,7 @@ body{
     height: 100vh;
 }
 
+/* centralizado na página os conteudos da main (titulo e formulário) e definido como display flex */
 main{
     width: 100%;
     height: 100%;
@@ -23,12 +26,14 @@ main{
     justify-content: space-around;
 }
 
+/* estilização do titulo  */
 .titulo{
     font-family: 'Amita', cursive;
     font-size: 48px;
     color: #20433D;
 }
 
+/* estilização do formulário, com arredondamento das bordas de 10px, uma borda para delimitação do conteúdo e centralização dos itens */
 form{
     margin: 30px;
     padding: 30px;
@@ -40,6 +45,7 @@ form{
     align-items: center;
 }
 
+/* definido um espaço de 5px entre os elementos, direcionamento de coluna */
 fieldset{
     border: none;
     padding: 15px;
@@ -50,6 +56,7 @@ fieldset{
     gap: 5px;
 }
 
+/* estilização do botão de conversão, definição do tempo de diminuição do hover */
 button{
     font-family: 'Merienda', cursive;
     font-size: 20px;
@@ -62,10 +69,12 @@ button{
     cursor: pointer;
     width: 100%;
 } 
+/* função hover para que o botão diminua ao passar do mouse */
 button:hover{
     transform: scale(0.9);
 }
 
+/* estilização das caixas de valores de entrada e saida */
 input{
     width: 100%;
     height: 45px;
@@ -77,11 +86,13 @@ input{
     outline: none;
 }
 
+/* definida a direção de linha para que as medidas de conversão e a seta fiquem alinhadas */
 .medidas{
     flex-direction: row;
     align-items: center;
 }
 
+/* diminuição do espaçamento de elementos para 2px e alinhado no centro para que o titulo fique centralizado em cima da caixa de seleção */
 .categorias{
     gap: 2px;
     align-items: center;
@@ -92,10 +103,26 @@ label{
     color: #20433D;
 }
 
+/* estilização das três caixas de seleção */
 select{
     width: 100%;
     height: 45px;
     background-color: #f2f2f2;
     padding-left: 10px;
+    border-radius: 7px;
+}
+
+.visivel{
+    display: flex;
+}
+.invisivel{
+    display: none;
+}
+
+.caixa-resultado{
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 38px;
+    border: 1px solid #000;
     border-radius: 7px;
 }
