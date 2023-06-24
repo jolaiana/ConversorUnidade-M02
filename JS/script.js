@@ -23,7 +23,7 @@ function chamaValor(resultado){
 // a variavel 'categorias' está sendo observada pelo addEventListener, quando houver uma mudança (monitorada pelo 'change') a função unidade da categoria será executada, mudando as seleções disponiveis de unidade
 categorias.addEventListener('change', unidadeDaCategoria)
 
-// a variável botão é monitorada e quando o evento 'click' ocorre, quando o usuário clica no botão, a função chama valor é executada fazendo com que o valor input de entrada passe para o input de saída (resposta)
+// a variável botão é monitorada e quando o evento 'click' ocorre, quando o usuário clica no botão, a condicional é verificada e realiza a execução da função de acordo com a categoria selecionada
 botao.addEventListener('click', function(){
     if (categorias.value=='Temperatura'){
         converteTemperatura()
@@ -82,7 +82,7 @@ function kelvinFahrenheit(kelvin){
     
 }
 
-//
+//condicinal de conversão de temperatura
 function converteTemperatura(){
     //o + converte o valorEntrada de string para número
     var valor = +valorEntrada.value
@@ -122,7 +122,7 @@ function libraGrama(libra) {
     return libra  * 453.6;
 }
 
-//
+//condicional de conversão de peso
 function convertePeso(){
     var valor = +valorEntrada.value
     if(entradaPeso.value == 'Quilogramas' && saidaPeso.value == 'Gramas'){
@@ -160,7 +160,7 @@ function polegadaMetro(polegada){
     return polegada / 39.37;
 }
 
-//
+//condicionais de conversão de comprimento
 function converteComprimento(){
     var valor = +valorEntrada.value
     if(entradaComprimento.value=='Metro' && saidaComprimento.value=='Polegada'){

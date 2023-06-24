@@ -112,6 +112,7 @@ select{
     border-radius: 7px;
 }
 
+/* estilização para que as opções de seleção de unidade que apareçam quando a página for aberta seja apenas as de comprimento */
 .visivel{
     display: flex;
 }
@@ -119,6 +120,7 @@ select{
     display: none;
 }
 
+/* estilização da caixa de resultado (div) */
 .caixa-resultado{
     background-color: #f2f2f2;
     width: 100%;
